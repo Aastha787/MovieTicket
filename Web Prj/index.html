@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Customer Name</h3>
+                <div class="input-field">
+                    <input type="text" required="">
+                </div>
+                <h3>Contact</h3>
+                <div>
+                <form>
+                    <input type="tel" id="contact" name="contact" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="">
+                </form>
+            </div>
+                
+            </div>
+            <div class="cvv">
+                <h3>Shift</h3>
+                <div class="">
+                     <select name="shift" id="shift">
+                         <option value="morning">Morning</option>
+                         <option value="day">Day</option>
+                         <option value="night">Night</option>
+                        
+
+                         
+                      </select>
+
+            
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Total Price</h3>
+                <div class="input-field">
+                    <input type="text" required="">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Date</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        
+                        <option value="Apr">Apr</option>
+                        <option value="NA">NA</option>
+                      
+                      </select>
+                      <select name="years" id="years">
+                         <option value="2022">2022</option>
+                         <option value="NA">NA</option>
+                      </select>
+                      <select name="date" id="date">
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                         <option value="5">5</option>
+                         <option value="6">6</option>
+
+                         
+                      </select>
+
+                </div>
+                <div class="cards">
+                   <a href="https://esewa.com"> <img src="esewa-logo.png" alt=""></a>
+                     <a href="https://khalti.com"> <img src="khalti.png" alt=""></a>
+                </div>
+            </div>    
+        </div>
+        <a href="thank.html">Confirm</a>
+    </div>
+</body>
+</html>

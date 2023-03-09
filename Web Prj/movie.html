@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-s">
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="block-heading">
+          <h1 class="glow">NEW SHOWS</h1>
+        
+
+<div class="row">
+  <div class="column">
+    <a href="https://youtu.be/C8JZRySDcZQ "><img src="images/1.jpg" width="350px" height="350px" alt="amh4" onclick="myFunction(this);"></a>
+    
+              <a href="login.html"><button class="btn btn-block btn-outline-primary" width="350px" height="350px" type="submit">BOOK NOW</button></a>
+             
+  </div>
+  <div class="column">
+   <a href="https://youtu.be/JKa05nyUmuQ"> <img src="images/2.webp" width="350px" height="350px" alt="kgf2" onclick="myFunction(this);"></a>
+    <a href="login.html"><button class="btn btn-block btn-outline-primary" width="350px" height="350px" type="submit">BOOK NOW</button></a>
+  </div>
+  <div class="column">
+    <a href="https://youtu.be/TJFVV2L8GKs"><img src="images/3.jpg" width="350px" height="350px"alt="witcher" onclick="myFunction(this);"></a>
+    <a href="login.html"><button class="btn btn-block btn-outline-primary" width="350px" height="350px" type="submit">BOOK NOW</button></a>
+  </div>
+  <div class="column">
+    <a href="https://youtu.be/A179apttY58"><img src="images/4.webp" width="350px" height="350px"alt="kasmir" onclick="myFunction(this);"></a>
+    <a href="login.html"><button class="btn btn-block btn-outline-primary" width="350px" height="350px" type="submit">BOOK NOW</button></a>
+  </div>
+   <div class="column">
+    <a href="https://youtu.be/GY4BgdUSpbE"><img src="images/RRR.webp" width="350px" height="350px"alt="kasmir" onclick="myFunction(this);"></a>
+   <a href="login.html"><button class="btn btn-block btn-outline-primary" width="350px" height="350px" type="submit">BOOK NOW</button></a>
+  </div>
+   <div class="column">
+    <a href="https://youtu.be/RRv_IJSQweM"><img src="images/movie3.jpg" width="350px" height="350px"alt="kasmir" onclick="myFunction(this);"></a>
+    <a href="login.html"><button class="btn btn-block btn-outline-primary" width="350px" height="350px" type="submit">BOOK NOW</button></a>
+  </div>
+
+</div>
+
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+<script>
+  function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
